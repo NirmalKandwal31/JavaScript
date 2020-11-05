@@ -1,13 +1,13 @@
 let source = 'the-times-of-india';
-let apiKey = '6bd5b82f0a8441c694ed0738df26c038'
+let apiKey = '<Add your APIkey created using news org>'
 
-//http://newsapi.org/v2/top-headlines?country=ie&apiKey=6bd5b82f0a8441c694ed0738df26c038
+
 
 let newsAccordion = document.getElementById('newsAccordion');
 
 const xhr = new XMLHttpRequest();
 xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`, true);
-//xhr.open('GET', `http://newsapi.org/v2/top-headlines?sources=the-times-of-india&apiKey=6bd5b82f0a8441c694ed0738df26c038`, true);
+
 
 xhr.onload = function () {
     if (this.status === 200) {
@@ -43,20 +43,3 @@ xhr.onload = function () {
 
 xhr.send()
 
-/*
-let search = document.getElementById('searchTxt');
-search.addEventListener("input", function () {
-
-    let inputVal = search.value.toLowerCase();
-    let card = document.getElementsByClassName('card');
-    Array.from(card).forEach(function (element) {
-        let cardTxt = element.getElementsByTagName("p")[0].innerText;
-        if (cardTxt.includes(inputVal)) {
-            element.style.display = "block";
-        }
-        else {
-            element.style.display = "none";
-        }
-
-    })
-})*/
