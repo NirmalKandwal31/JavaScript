@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Method in  ES6</title>
+</head>
+
+<body>
+    <script>
+    const user1={
+        name:'John',
+        age:'25'      
+        }
+        const user2={
+        name:'Mark',
+        age:'28'      
+        }
+        const user3={
+        name:'Mary',
+        age:'35'      
+        }
+    
+ function show() {document.write("Hello , "+this.name )}
+ let User1=show.bind(user1);
+ let User2=show.bind(user2)
+ let User3=show.bind(user3) 
+ User1();
+ User2(); 
+ User3();   
+    
+    </script>
+
+</body>
+
+</html>
+

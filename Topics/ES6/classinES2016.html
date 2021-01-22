@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in ES6</title>
+</head>
+
+<body>
+    <script>
+        class myClass {
+           constructor(){
+                this.model = 'Slim';
+                this.size='Large';
+               }
+               price()
+               {
+                   return "Price is Rs 200"
+               }
+            
+        }
+        var lg = new myClass();
+        var samsung =new myClass();
+        document.write(lg.model +" "+lg.size+ "  " + lg.price());
+        document.write('<br>');
+        document.write(samsung.model + "  " + samsung.price());
+
+        // Class a expression
+        var myClass2=class  {
+           constructor(){
+                this.model = 'Not Slim';
+                this.size='Small';
+               }
+               price()
+               {
+                   return "Price is Rs 500"
+               }            
+        }
+        var nokia = new myClass2();
+        var yono =new myClass2();
+        document.write(nokia.model +" "+nokia.size+ "  " + nokia.price());
+       
+    </script>
+
+</body>
+
+</html>

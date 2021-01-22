@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Method in  ES6</title>
+</head>
+
+<body>
+    <script>
+    const user1={
+        name:'John',
+        age:'25',
+        show: function(salary){
+            document.write("Hello "+ this.name + salary)
+        }
+    }
+    //user1.show();
+    const user2={
+        name:'Mark',
+        age:'28',
+    }
+    user1.show.apply(user2,[2500]);
+    
+    
+    </script>
+
+</body>
+
+</html>

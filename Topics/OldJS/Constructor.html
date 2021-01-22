@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+
+<body>
+    <script>
+        function TV(size) {
+           
+                this.model = 'Slim';
+                this.size='Large';
+                this.price= function () { return "Just for Euro 300" };
+            
+        }
+        var lg = new TV();
+        var samsung =new TV();
+        document.write(lg.model +lg.size+ "  " + lg.price());
+        document.write(samsung.model + "  " + samsung.price());
+    </script>
+
+</body>
+
+</html>

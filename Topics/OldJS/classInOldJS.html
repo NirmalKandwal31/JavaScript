@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+
+<body>
+    <script>
+        var myClass=function(size) {
+           
+                this.model = 'Slim';
+                this.size='Large';
+                //private property
+                var color="Black";
+                this.price= function () { return "Just for Euro 300" };
+            
+        }
+        var lg = new myClass();
+        var samsung =new myClass();
+        document.write(lg.model +" "+lg.size+ "  " + lg.price());
+        document.write('<br>');
+        document.write(samsung.model + "  " + samsung.price());
+    </script>
+
+</body>
+
+</html>

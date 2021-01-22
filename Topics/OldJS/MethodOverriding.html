@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Overiding</title>
+</head>
+
+<body>
+    <script>
+        class Parent {
+            constructor(fees) {
+                this.fees = fees
+            }
+            show() {
+                return "Hello Parent"+ this.fees
+            }
+
+        }
+        class Son extends Parent {
+            constructor(fees) {
+                super(fees);
+            }
+            show() {
+                return "Hello Son" + this.fees
+            }
+        }
+        var s = new Son(1000);
+        document.write(s.show())
+  
+
+    </script>
+
+</body>
+
+</html>

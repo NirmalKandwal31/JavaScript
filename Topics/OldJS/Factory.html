@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factory Function</title>
+</head>
+
+<body>
+    <h1><b>When a functions return an object , we call it a factory function. 
+        It can produce object instance without new keyword.
+        </b></h1>
+    <br>
+    <script>
+
+        function tv() {
+            return {
+                model: 'Slim',
+                price: function () { return "Just for Euro 300" }
+            }
+        }
+        var lg = tv();
+        var samsung = tv();
+        document.write(lg.model + "  " + lg.price());
+        document.write("<br>");
+        document.write(samsung.model + "  " + samsung.price());
+    </script>
+
+</body>
+
+</html>

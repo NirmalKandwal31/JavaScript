@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var-Let-Const</title>
+</head>
+
+<body>
+    <script>
+        function myVar() {
+            var i = 5;
+            document.write("<br>")
+            if (true) {
+                var i = 10
+
+                document.write(i);
+                document.write("<br>")
+
+            }
+            document.write(i)
+
+        }
+        myVar();
+        //Let
+        function myLet() {
+            let a = 5;
+            document.write("<br>")
+            if (true) {
+                let a = 10;
+                document.write(a);
+                document.write("<br>")
+
+            }
+            document.write(a)
+
+        }
+        myLet();
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring in  ES6</title>
+</head>
+
+<body>
+    <script>
+      var employee =['John','Jhonny','Mark','Steve'];
+      let [emp1,emp2,emp3,emp4] = employee;
+      document.write(emp1,emp2,emp3,emp4);
+      //before ES6 we have to write document.write(employee[0])
+      document.write(employee[0]);
+
+      var employee2 =['John','Jhonny','Mark','Steve'];
+      let [emp11,...emp22] = employee2;
+      document.write(emp11,emp22);
+      //before ES6 we have to write document.write(employee[0])
+      document.write(employee[0]);
+     
+
+       
+    </script>
+
+</body>
+
+</html>

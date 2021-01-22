@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        //Object
+        var fees = {};
+        fees['School'] = 100;
+        fees['Tution'] = 200;
+        fees.sports = 300;
+        fees.total = function () { return ((fees.sports) + (fees['School']) + (fees['Tution'])) }
+        document.write(fees['Tution']);
+        document.write(fees.sports);
+        document.write(fees.total());
+
+        //Object Literal
+        var fees1 = { 'School': 100, 'Tution': 200, 'Sports': 300 }
+        fees1.Picnic=600;
+        document.write(fees1.Sports) // Accessing Property
+        document.write(fees1.Picnic) ;
+
+    </script>
+
+</body>
+
+</html>

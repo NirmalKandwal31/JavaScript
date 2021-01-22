@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring in  ES6</title>
+</head>
+
+<body>
+    <script>
+      var employee ={
+          name:'John',
+          age:'22',
+          subject:'JS'
+      }
+
+      let {name,age,subject} = employee;
+      document.write(name,age,subject);
+      //before ES6 we have to write document.write(employee.name,employee.age)
+      document.write(employee.name);
+     
+
+       
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbols in  ES6</title>
+</head>
+
+<body>
+    <script>
+    let salary=Symbol("salary")
+      let employee ={
+          name:'John',
+          age:'22',
+          subject:'JS',
+          [salary]:'2500'
+      }
+
+     
+      document.write(employee.name,employee.age,employee.subject,employee.salary); // you will get salary as undefined
+      document.write(employee.name,employee.age,employee.subject,employee[salary]);
+
+
+     
+
+       
+    </script>
+
+</body>
+
+</html>
